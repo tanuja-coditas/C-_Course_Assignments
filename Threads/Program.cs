@@ -14,10 +14,8 @@ namespace Threads
 
         static void TimerCallback(object state)
         {
-            // Cast the state back to a Thread object
+            
             Thread thread = (Thread)state;
-
-            // Signal the thread to stop
             thread.Interrupt();
         }
 

@@ -22,7 +22,7 @@ namespace BookStore.Controllers
         public async Task<IActionResult> Index()
         {
             return _context.Books != null ?
-                View(await _context.Books.ToListAsync()) :
+                View(await _context.Books .ToListAsync()) :
                 Problem("Entity set 'CompanyContext.Books' is null");
         }
 

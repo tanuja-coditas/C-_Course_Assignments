@@ -20,7 +20,7 @@ namespace MCQAssg
                 Console.WriteLine("3.Exit");
 
 
-                choice = Convert.ToInt32(Console.ReadLine());
+                bool isInt = int.TryParse(Console.ReadLine(), out choice);
 
                 if (choice == 1)
                 {
@@ -89,6 +89,13 @@ namespace MCQAssg
                     student.StudentName = Console.ReadLine();
 
                     student.TestPapers = testPapers;
+
+                   
+                    if (testPapers.Count == 0)
+                    {
+                        Console.WriteLine("Test Paper is not present!");
+                        continue;
+                    }
 
                     Console.WriteLine("Test Begins ---");
 

@@ -217,10 +217,9 @@ namespace LibraryClasses
             Console.WriteLine(items.Count);
            foreach(var item in items)
             {
-                //Console.WriteLine("Hii");
                 item.Print();
             
-                Console.WriteLine("1.Borrow \n 2.Return \n 3.Next \n 4.Exit");
+                Console.WriteLine("\n1.Borrow \n 2.Return \n 3.Next \n 4.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 if(choice == 1)
