@@ -135,7 +135,7 @@ namespace ZombieShooter
                 healthBar.ForeColor = System.Drawing.Color.Red; // change the progress bar colour to red. 
             }
             if (goleft && player.Left > 0)
-            {
+            {  
                 player.Left -= speed;
                 // if moving left is true AND pacman is 1 pixel more from the left 
                 // then move the player to the LEFT
